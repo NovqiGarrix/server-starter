@@ -37,6 +37,11 @@ const schema = new mongoose.Schema({
     role: {
         type: Number,
         required: true
+    },
+
+    type: {
+        type: String,
+        required: true
     }
 
 }, { timestamps: true });
