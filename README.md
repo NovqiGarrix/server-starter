@@ -38,7 +38,7 @@ Open up your terminal, and type <br >
 <br />
 ```npm install```, if you are using npm.
 
-### # Run unit testing
+## # Run unit testing
 Open up your terminal, and type <br >
 
 ```yarn test```, if you are using yarn
