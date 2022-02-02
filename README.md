@@ -1,5 +1,7 @@
 # Web Server Starter (BACKEND)
 
+![Typescript](https://miro.medium.com/max/1756/1*fzcYZIhdZjuQaT8gTk1YAQ.png)
+
 ## Getting Started
 ### # ENV Variables
 1. Create a .env file <br>
