@@ -1,4 +1,4 @@
-# Web Server Starter (BACKEND)
+## Web Server Starter (BACKEND)
 
 ![Typescript](https://miro.medium.com/max/1756/1*fzcYZIhdZjuQaT8gTk1YAQ.png)
 
@@ -60,6 +60,96 @@ Open up your terminal, and type <br >
 <br />
 ```npm run build```, if you are using npm.
 <br>
+
+# # API Specification
+
+## Register
+Request: 
+ - Method: POST
+ - Endpoint: `/api/v1/auth/`
+ - Header: 
+    - Content-Type: application/json
+    - Accept: application/json
+ - Body:
+ ```json
+ {
+     "name": "string",
+     "email": "string",
+     "password": "string",
+     "type": "admin | user"
+ }
+ ```
+
+ Response: 
+ <br>
+ ```If success will return status code 201```
+
+```If one of the body is null or undefined```
+ ```json
+ {
+     "data": null,
+     "error": [
+         {
+             "field": "string",
+             "message": "string"
+         }
+     ]
+ }
+ ```
+
+## Login
+Request: 
+ - Method: POST
+ - Endpoint: `/api/v1/auth/`
+ - Header: 
+    - Content-Type: application/json
+    - Accept: application/json
+ - Body:
+ ```json
+{
+    "email": "string",
+    "password": "string"
+}
+ ```
+Response: 
+ <br>
+ ```If success```
+ ```json
+ {
+     "data": {
+         "_id": "string",
+         "name": "string",
+         "email": "string",
+         "role": "number",
+         "createdAt": "string",
+         "updatedAt": "string",
+         "access_token": "string",
+         "refresh_token": "string"
+     },
+     "error": null
+ }
+ ```
+```If email or password is null or undefined```
+ ```json
+ {
+     "data": null,
+     "error": [
+         {
+             "field": "string",
+             "message": "string"
+         }
+     ]
+ }
+ ```
+
+
+ ```If email and password are wrong```
+ ```json
+ {
+     "data": null,
+     "error": "string"
+ }
+ ```
 
 ## # That's it.
 If you have any doubts or errors, please post it in issues!. I'd love to read and solve it!.
