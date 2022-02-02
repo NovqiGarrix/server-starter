@@ -66,7 +66,7 @@ Open up your terminal, and type <br >
 ## Register
 Request: 
  - Method: POST
- - Endpoint: `/api/v1/auth/`
+ - Endpoint: `/api/v1/auth/signUp`
  - Header: 
     - Content-Type: application/json
     - Accept: application/json
