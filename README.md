@@ -36,6 +36,14 @@ Open up your terminal, and type <br >
 <br />
 ```npm install```, if you are using npm.
 
+### # Run unit testing
+Open up your terminal, and type <br >
+
+```yarn test```, if you are using yarn
+<br />
+```npm test```, if you are using npm.
+
+
 ## # Run the Server
 Open up your terminal, and type <br >
 
