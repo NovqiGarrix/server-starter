@@ -63,7 +63,8 @@ Open up your terminal, and type <br >
 
 # # API Specification
 
-## Register
+## # AuthRoute
+### Register
 Request: 
  - Method: POST
  - Endpoint: `/api/v1/auth/signUp`
@@ -142,7 +143,6 @@ Response:
  }
  ```
 
-
  ```If email and password are wrong```
  ```json
  {
@@ -150,6 +150,77 @@ Response:
      "error": "string"
  }
  ```
+
+## # UserRoute
+### Get Current Logged User
+Request: 
+ - Method: GET
+ - Endpoint: `/api/v1/user`
+ - Header: 
+    - Content-Type: application/json
+    - Accept: application/json
+
+Response:
+```json
+{
+    "data": {
+        "_id": "string",
+        "username": "string",
+        "name": "string",
+        "email": "string",
+        "type": "string",
+        "role": "string",
+        "profile_picture": "string",
+        "following": "[string]",
+        "followers": "[string]",
+        "bio": "string",
+        "likes": "string",
+        "verified": "string",
+        "videos": "[string]",
+        "liked": "[string]",
+        "likeType": "[string]",
+        "createdAt": "string",
+        "updatedAt": "string",
+        "newAccessToken": "string || undefined"
+    },
+    "error": null
+}
+```
+
+### Get User based on query (Admin Only)
+Request: 
+ - Method: GET
+ - Endpoint: `/api/v1/user/users`
+ - Header: 
+    - Content-Type: application/json
+    - Accept: application/json
+
+Response:
+```json
+{
+    "data": {
+        "_id": "string",
+        "username": "string",
+        "name": "string",
+        "email": "string",
+        "type": "string",
+        "role": "string",
+        "profile_picture": "string",
+        "following": "[string]",
+        "followers": "[string]",
+        "bio": "string",
+        "likes": "string",
+        "verified": "string",
+        "videos": "[string]",
+        "liked": "[string]",
+        "likeType": "[string]",
+        "createdAt": "string",
+        "updatedAt": "string",
+        "newAccessToken": "string" || undefined
+    },
+    "error": null
+}
+```
 
 ## # That's it.
 If you have any doubts or errors, please post it in issues!. I'd love to read and solve it!.
