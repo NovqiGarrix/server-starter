@@ -3,5 +3,4 @@ For example,
  - auth folder for AuthRoute
  - user folder for UserRoute
 
-You can find AuthRoute, and UserRoute in route folder
-./src/route/v1
+You can find AuthRoute, and UserRoute in ./src/route/v1
