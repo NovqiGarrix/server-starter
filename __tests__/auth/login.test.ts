@@ -26,7 +26,7 @@ describe('Login Unit Testing', () => {
         await mongoose.connection.close();
     })
 
-    describe('Login without no email', () => {
+    describe('Login without email', () => {
 
         const data = {
             password: "oke!"
@@ -47,7 +47,7 @@ describe('Login Unit Testing', () => {
         })
     })
 
-    describe('Login without no password', () => {
+    describe('Login without password', () => {
 
         const data = {
             email: "novqigarrix@gmail.com"
